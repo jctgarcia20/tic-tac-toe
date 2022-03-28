@@ -1,0 +1,67 @@
+* {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+header {
+    text-align: center;
+    color: lightgray;
+    padding: 2vmin;
+    font-size: 6vmin;
+}
+
+body {
+    background-color: #232124;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+  
+td {
+    height: 200px;
+    width: 200px;
+}
+  
+td div {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+  
+tr td:nth-child(2) {
+    border-left: 4px dashed white;
+    border-right: 4px dashed white;
+}
+  
+tr:nth-child(2) td {
+    border-top: 4px dashed white;
+    border-bottom: 4px dashed white;
+}
+  
+button {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+  
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background: url('https://i.imgur.com/yFoS6iw.gif');
+}
