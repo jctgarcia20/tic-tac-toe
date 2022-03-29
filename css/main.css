@@ -5,13 +5,14 @@
 
 header {
     text-align: center;
-    color: lightgray;
+    color: white;
     padding: 2vmin;
     font-size: 6vmin;
 }
 
 body {
-    background-color: #232124;
+    /* background-color: #232124; */
+    background-color: #000000;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -39,19 +40,19 @@ td div {
 }
   
 tr td:nth-child(2) {
-    border-left: 4px dashed white;
-    border-right: 4px dashed white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
 }
   
 tr:nth-child(2) td {
-    border-top: 4px dashed white;
-    border-bottom: 4px dashed white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
 }
   
 button {
     margin-top: 30px;
     padding: 15px;
-    background-color: black;
+    background-color: rgb(101, 13, 13);
     color: white;
     border-radius: 5px;
     font-size: 20px;
@@ -62,6 +63,7 @@ button:hover {
     color: black;
 }
 
-footer {
-    background: url('https://i.imgur.com/yFoS6iw.gif');
+img.animated-gif {
+    width: 500px;
+    height: auto;
 }

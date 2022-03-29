@@ -2,7 +2,7 @@
 const lookup = {
     '1': 'BLUE',
     '-1': 'RED',
-    'null': 'WHITE'
+    'null': '#000000'
 };
   
 const winningCombos = [
@@ -42,7 +42,8 @@ function handleMove(evt) {
   
 function getWinner() {
     for (let i = 0; i < winningCombos.length; i++) {
-      if (Math.abs(board[winningCombos[i][0]] + board[winningCombos[i][1]] + board[winningCombos[i][2]]) === 3) return board[winningCombos[i][0]];
+      if (Math.abs(board[winningCombos[i][0]] + board[winningCombos[i][1]] 
+        + board[winningCombos[i][2]]) === 3) return board[winningCombos[i][0]];
 }
     if (board.includes(null)) return null;
     return 'T';
@@ -55,7 +56,7 @@ function render() {
     if (winner === 'T') {
       message.innerHTML = 'EVENLY MATCHED!!! 👿';
     } else if (winner) {
-      message.innerHTML = `CONGRATS ${lookup[winner].toUpperCase()}! YOU ARE THE WINNER 🏆🎉`;
+      message.innerHTML = `CONGRATS ${lookup[winner].toUpperCase()}! YOU ARE THE WINNER 🏆😈`;
     } else {
       message.innerHTML = `${lookup[turn].toUpperCase()}'S TURN`;
     }
